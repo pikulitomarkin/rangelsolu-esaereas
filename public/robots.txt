@@ -6,4 +6,4 @@ Disallow: /src/
 Disallow: /*.json$
 
 # Sitemap
-Sitemap: https://rangel-aerialfilms.com/sitemap.xml
+Sitemap: https://www.aerialfilms.com.br/sitemap.xml
