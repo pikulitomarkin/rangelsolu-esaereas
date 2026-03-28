@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquear assets desnecessários para indexação
+Disallow: /src/
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://rangel-aerialfilms.com/sitemap.xml
