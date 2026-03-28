@@ -7,24 +7,54 @@ const navLinks = [
   { label: "Contato", href: "#contato" },
 ];
 
-function DroneIcon() {
+function Logo() {
   return (
     <svg
-      width="28"
-      height="28"
-      viewBox="0 0 28 28"
+      width="140"
+      height="40"
+      viewBox="0 0 140 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
+      aria-label="Rangel Aerial Films"
     >
-      <rect width="28" height="28" rx="6" fill="#1A237E" />
-      <rect x="6" y="10" width="16" height="2.5" rx="1.25" fill="#FBC02D" />
-      <rect x="8" y="14" width="12" height="2.5" rx="1.25" fill="#FBC02D" />
-      <rect x="10" y="18" width="8" height="2.5" rx="1.25" fill="#FBC02D" />
-      <circle cx="6" cy="10" r="2" fill="#ffffff" />
-      <circle cx="22" cy="10" r="2" fill="#ffffff" />
-      <circle cx="8" cy="19" r="1.5" fill="#ffffff" />
-      <circle cx="20" cy="19" r="1.5" fill="#ffffff" />
+      {/* Drone silhouette */}
+      {/* Body */}
+      <ellipse cx="20" cy="20" rx="6" ry="3.5" fill="#1A237E"/>
+      {/* Left arm */}
+      <rect x="5" y="18.5" width="9" height="2" rx="1" fill="#1A237E" opacity="0.85"/>
+      {/* Right arm */}
+      <rect x="26" y="18.5" width="9" height="2" rx="1" fill="#1A237E" opacity="0.85"/>
+      {/* Left rotor */}
+      <ellipse cx="7" cy="17.5" rx="5" ry="1.5" fill="#FBC02D" opacity="0.7"/>
+      {/* Right rotor */}
+      <ellipse cx="33" cy="17.5" rx="5" ry="1.5" fill="#FBC02D" opacity="0.7"/>
+      {/* Camera lens */}
+      <circle cx="20" cy="20" r="2.2" fill="white" opacity="0.9"/>
+      <circle cx="20" cy="20" r="1.1" fill="#1A237E"/>
+
+      {/* RANGEL text */}
+      <text
+        x="44"
+        y="22"
+        fontFamily="Montserrat, sans-serif"
+        fontWeight="800"
+        fontSize="14"
+        fill="#1A237E"
+        letterSpacing="1.5"
+      >RANGEL</text>
+
+      {/* Divider lines + AERIAL FILMS */}
+      <line x1="44" y1="26" x2="50" y2="26" stroke="#FBC02D" strokeWidth="0.8"/>
+      <text
+        x="52"
+        y="28"
+        fontFamily="Montserrat, sans-serif"
+        fontWeight="600"
+        fontSize="7"
+        fill="#555555"
+        letterSpacing="2"
+      >AERIAL FILMS</text>
+      <line x1="118" y1="26" x2="124" y2="26" stroke="#FBC02D" strokeWidth="0.8"/>
     </svg>
   );
 }
@@ -59,18 +89,10 @@ function Header() {
         <a
           href="#inicio"
           onClick={(e) => handleNavClick(e, "#inicio")}
-          className="flex items-center gap-2.5 group"
-          aria-label="Rangel Soluções Aéreas — Início"
+          className="flex items-center group"
+          aria-label="Rangel Aerial Films — Início"
         >
-          <DroneIcon />
-          <div className="flex flex-col leading-none">
-            <span className="text-xl font-extrabold text-rangel-blue tracking-tight">
-              Rangel
-            </span>
-            <span className="hidden sm:block text-[10px] font-medium text-gray-400 uppercase tracking-widest mt-0.5">
-              Soluções Aéreas
-            </span>
-          </div>
+          <Logo />
         </a>
 
         {/* Desktop nav */}
