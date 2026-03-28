@@ -35,19 +35,20 @@ function HeroVideo() {
             <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-rangel-yellow" />
           </span>
           <span className="text-xs font-semibold text-white tracking-wide uppercase">
-            Tecnologia Drone para Construção Civil
+            Drone · Fotografia · Eventos · Construção Civil
           </span>
         </div>
 
         {/* Headline */}
         <h1 className="max-w-4xl text-4xl font-extrabold leading-tight text-white md:text-6xl lg:text-7xl">
-          Inteligência Aérea para{" "}
-          <span className="text-rangel-yellow">Decisões Estratégicas</span>
+          Do alto, capturamos{" "}
+          <span className="text-rangel-yellow">tudo que importa para você</span>
         </h1>
 
         {/* Subtext */}
         <p className="mt-6 max-w-2xl text-base text-gray-200 md:text-xl leading-relaxed">
-          Inspeção, Mapeamento e Dados Precisos para Construção Civil
+          Obras, casamentos, festas e eventos — inspeção técnica ou memórias
+          para a vida toda. Um único voo, resultado extraordinário.
         </p>
 
         {/* CTAs */}
