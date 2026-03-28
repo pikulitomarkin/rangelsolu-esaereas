@@ -7,11 +7,11 @@ import Diferenciais from "./components/Diferenciais";
 import Contato from "./components/Contato";
 
 const sectionFade = {
-  hidden: { opacity: 0, y: 28 },
+  hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, ease: "easeOut" },
+    transition: { duration: 0.65, ease: "easeOut" },
   },
 };
 
@@ -20,9 +20,9 @@ const pageFlow = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.5,
+      duration: 0.4,
       when: "beforeChildren",
-      staggerChildren: 0.12,
+      staggerChildren: 0.1,
     },
   },
 };
@@ -33,7 +33,7 @@ function App() {
       initial="hidden"
       animate="visible"
       variants={pageFlow}
-      className="bg-rangel-dark text-white"
+      className="min-h-screen bg-white text-slate-900 [&_h1]:text-balance [&_h1]:tracking-tighter [&_h2]:text-balance [&_h2]:tracking-tighter"
     >
       <Header />
 
