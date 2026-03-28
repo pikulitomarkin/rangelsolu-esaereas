@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, MapPin, Send } from 'lucide-react';
+import { Phone, MapPin, Send, Mail } from 'lucide-react';
 
 function InstagramIcon({ size = 24 }) {
   return (
@@ -34,6 +34,13 @@ const contacts = [
     value: "(21) 96488-4677",
     href: "https://wa.me/5521964884677",
     external: true,
+  },
+  {
+    icon: Mail,
+    label: "E-mail",
+    value: "contato@rangel-aerialfilms.com",
+    href: "mailto:contato@rangel-aerialfilms.com",
+    external: false,
   },
   {
     IconComponent: InstagramIcon,
