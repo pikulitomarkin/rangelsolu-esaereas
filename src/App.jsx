@@ -56,6 +56,15 @@ function App() {
       <motion.section id="contato" variants={sectionFade}>
         <Contato />
       </motion.section>
+
+      <footer className="bg-rangel-dark border-t border-white/5 py-6 text-center">
+        <p className="text-sm text-gray-400">
+          © 2026 <span className="text-white font-semibold">Rangel Aerial Films</span> — Todos os direitos reservados.
+        </p>
+        <p className="mt-1 text-xs text-gray-600">
+          desenvolvido por <span className="text-gray-500">vintagedevstack</span> &ldquo;maquina e humano&rdquo;
+        </p>
+      </footer>
     </motion.div>
   );
 }
